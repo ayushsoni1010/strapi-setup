@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hackathons",
+  "info": {
+    "singularName": "hackathon",
+    "pluralName": "hackathons",
+    "displayName": "Hackathon",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hackathonTitle": {
+      "type": "string"
+    },
+    "hackathonOrganizer": {
+      "type": "string"
+    },
+    "isHackathonOffline": {
+      "type": "boolean"
+    },
+    "isHackathonCompleted": {
+      "type": "boolean"
+    },
+    "hackathonLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hackathonBG": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hackathonContentImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hackathonStartDate": {
+      "type": "date"
+    },
+    "hackathonEndDate": {
+      "type": "date"
+    },
+    "hackathonStartTime": {
+      "type": "time"
+    },
+    "hackathonEndTime": {
+      "type": "time"
+    },
+    "hackathonSlugID": {
+      "type": "uid",
+      "targetField": "hackathonTitle"
+    },
+    "hackathonDescription": {
+      "type": "richtext"
+    },
+    "hackathonLogoID": {
+      "type": "string"
+    },
+    "hackathonBGID": {
+      "type": "string"
+    }
+  }
+}
